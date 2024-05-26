@@ -1,16 +1,15 @@
 <script setup>
-import Login from './components/LogIn.vue';
-import SingUp from './components/SingUp.vue';
-import ForgotPassword from './components/ForgotPassword.vue';
+import Sidebar from './components/Sidebar.vue';
+import MainHeader from "./components/MainHeader.vue";
 </script>
 
 <template>
-  <Login />
-  <SingUp />
-  <ForgotPassword />
+  <div class="fixed flex w-full">
+    <Sidebar />
+    <MainHeader />
+  </div>
+  <router-view />
+
 </template>
 
-<style scoped>
-
-</style>
-
+<style scoped></style>
