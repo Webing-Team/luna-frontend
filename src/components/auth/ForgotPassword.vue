@@ -1,9 +1,13 @@
+<script setup>
+import '../../assets/auth.css'
+</script>
+
 <template>
         <header class="main-header  ">
-            <button class=" mt-46 ml-44"> <img src="../../public/img/maki_arrow.png" alt=""></button>
+            <button class=" mt-46 ml-44"> <img src="../../../public/img/maki_arrow.png" alt=""></button>
             <!-- контейнер с картинкой и полем ввода данных  -->
             <div class="main-header__container flex justify-center mt-200  gap-350">
-                <img src="../../public/img/moon.png" alt="">
+                <img src="../../../public/img/moon.png" alt="">
                 <div class="main-header__window-comeback__forgot_password">
                     <h1 class="main-header__title">
                         Forgot Password
