@@ -1,46 +1,7 @@
-.main-header__window-comeback {
-    height: 463px;
-    width: 413px;
-    background: #181818;
-    border-radius: 55px;
-    margin-top: -50px;
-    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.main-header__title {
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    padding-top: 25px;
-}
-
-.main-header__text {
-    width: 346px;
-    font-size: 16px;
-    color: #A0A0A0;
-    text-align: justify;
-    margin-left: 33px;
-    margin-top: -15px;
-    /* уменьшил отсуп от заголовка до текста */
-}
-
-.main-header__span {
-    width: 346px;
-    font-size: 16px;
-    color: #A0A0A0;
-    padding-left: 130px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Выравнивание элементов по центру по вертикали */
-}
 
 .main-header__input {
     background: #111111;
@@ -61,20 +22,6 @@
     padding-left: 10px;
 }
 
-.main-header__button {
-    color: #fff;
-    padding-top: 10px;
-}
-
-.button-blue {
-    width: 346px;
-    height: 45px;
-    border-radius: 10px;
-    background: #23415B;
-    margin-left: 33px;
-    margin-top: 5px;
-}
-
 .main-header__input::placeholder {
     font-size: 16px;
     font-weight: 400;
@@ -82,65 +29,12 @@
     padding-left: 10px;
 }
 
-.text-container {
-    text-align: center;
-    margin-left: 740px;
-}
-
-.main-header__text2 {
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.36px;
-    color: #fff;
-    padding-top: 10px;
-    gap: 5px;
-    padding-bottom: 8px;
-}
-
-.main-header__link {
-    color: rgb(115, 155, 185);
-}
-
-.main-header__text3 {
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.36px;
-    color: #8C8C8C;
-}
-
-.main-header__text__singup {
-    width: 350px;
-    font-size: 20px;
-    color: #A0A0A0;
-    text-align: center;
-    margin-left: 33px;
-    margin-top: -15px;
-}
 
 .main-header__span__singup {
     display: flex;
     justify-content: center;
 }
 
-.main-header__window-comeback__for-sing-up {
-    height: 600px;
-    width: 413px;
-    background: #181818;
-    border-radius: 55px;
-    margin-top: -130px;
-    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
-}
-
-.button-blue2 {
-    width: 346px;
-    height: 45px;
-    border-radius: 10px;
-    background: #23415B;
-    margin-left: 33px;
-
-}
 
 input[type="radio"] {
     display: none;
@@ -181,58 +75,5 @@ input[type="radio"]:checked+.custom-radio:after {
     display: block;
 }
 
-.form-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 35px;
-    gap: 10px;
 
-}
-.main-header__text__for-sing-up{
-   font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 19.36px;
-color: #fff;
-padding-top: 25px;
-gap: 5px;
-padding-bottom: 8px;
-}
 
-.main-header__text__rivaci-polic{
-    font-family: Inter;
-font-size: 15px;
-font-weight: 400;
-line-height: 18.15px;
-text-align: left;
-color: #A0A0A0;
-margin-bottom: 13px;
-}
-
-.link{
-    color: rgb(115, 155, 185);
-}
-
-.main-header__window-comeback__forgot_password{
-    height: 256px;
-    width: 413px;
-    background: #181818;
-    border-radius: 55px;
-    margin-top: 30px;
-    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
-}
-
-.main-header__text__forgot-password{
-    font-family: Inter;
-    font-size: 16px;
-    color: #8C8C8C;
-    gap: 5px;
-    margin-top: -110px;
-}
-
-.text-container-2 {
-    text-align: center;
-    margin-left: 740px;
-
-}
