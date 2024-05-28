@@ -13,16 +13,26 @@
                 </h1>
                 <p
                     class="main-header__text__singup w-[350px] text-[20px] text-[#A0A0A0] text-center ml-[33px] mt-[-15px]">
-                    Luna is a dynamic space for . <span class="main-header__span__singup">connecting, sharing, and
-                        discovering</span><span class="main-header__span__singup">new interests.</span>
+                    Luna is a dynamic space for . <span
+                        class="main-header__span__singup flex justify-center">connecting, sharing, and
+                        discovering</span><span class="main-header__span__singup flex justify-center">new
+                        interests.</span>
                 </p>
                 <!-- поля для ввода информации  -->
                 <fieldset class="main-header__fieldset ">
                     <div class="container ">
-                        <input class="main-header__input " type="text" placeholder="Username">
-                        <input class="main-header__input" type="email" placeholder="Email">
-                        <input class="main-header__input" type="password" placeholder="Password">
-                        <input class="main-header__input" type="password" placeholder="Password">
+                        <input
+                            class="main-header__input bg-black w-346 h-45 top-529 left-1164 gap-0 rounded-10 opacity-0 mb-14 mt-10 font-Inter text-white outline-none pl-10"
+                            type="text" placeholder="Username">
+                        <input
+                            class="main-header__input bg-black w-346 h-45 top-529 left-1164 gap-0 rounded-10 opacity-0 mb-14 mt-10 font-Inter text-white outline-none pl-10"
+                            type="email" placeholder="Email">
+                        <input
+                            class="main-header__input bg-black w-346 h-45 top-529 left-1164 gap-0 rounded-10 opacity-0 mb-14 mt-10 font-Inter text-white outline-none pl-10"
+                            type="password" placeholder="Password">
+                        <input
+                            class="main-header__input bg-black w-346 h-45 top-529 left-1164 gap-0 rounded-10 opacity-0 mb-14 mt-10 font-Inter text-white outline-none pl-10"
+                            type="password" placeholder="Password">
                     </div>
                 </fieldset>
                 <div class="form-container flex items-center justify-between ml-[35px] gap-[10px]">

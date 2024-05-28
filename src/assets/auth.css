@@ -3,37 +3,8 @@
 @tailwind utilities;
 
 
-.main-header__input {
-    background: #111111;
-    width: 346px;
-    height: 45px;
-    top: 529px;
-    left: 1164px;
-    gap: 0px;
-    border-radius: 10px;
-    opacity: 0px;
-    margin-bottom: 14px;
-    margin-top: 10px;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    color: #ffffff;
-    outline: none;
-    padding-left: 10px;
-}
-
-.main-header__input::placeholder {
-    font-size: 16px;
-    font-weight: 400;
-    color: #484848;
-    padding-left: 10px;
-}
 
 
-.main-header__span__singup {
-    display: flex;
-    justify-content: center;
-}
 
 
 input[type="radio"] {
