@@ -21,7 +21,7 @@ input[type="radio"] {
     cursor: pointer;
     position: relative;
     margin-right: 8px;
-    margin-bottom: 20px;
+  
 }
 
 .custom-radio:after {

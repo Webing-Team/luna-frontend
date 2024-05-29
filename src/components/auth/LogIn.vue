@@ -1,6 +1,6 @@
 <template>
     <header class="main-header">
-        <button class="mt-4 ml-4"><img src="/luna-frontend/public/img/maki_arrow.png" alt=""></button>
+        <a href="" ><img class=" mt-[44px] ml-[46px]" src="/luna-frontend/public/img/maki_arrow.png" alt=""></a>
         <!-- контейнер с картинкой и полем ввода данных  -->
         <div class="flex justify-center mt-24 gap-[350px]">
             <img src="/luna-frontend/public/img/moon.png" class="mt-[70px]"alt="">
