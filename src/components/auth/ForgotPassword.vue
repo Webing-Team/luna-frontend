@@ -1,10 +1,10 @@
 <template>
     <header class="main-header">
-        <a href=""><img class=" mt-[44px] ml-[46px]" src="/luna-frontend/public/img/maki_arrow.png" alt=""></a>
+      <router-link to="/" ><img class=" mt-[44px] ml-[46px]" src="/src/assets/img/maki_arrow.png" alt=""></router-link>
         <!-- контейнер с картинкой и полем ввода данных  -->
 
         <div class="flex justify-center mt-24 gap-[350px]">
-            <img src="/luna-frontend/public/img/moon.png" class="object-contain mt-[70px]" alt="">
+            <img src="/src/assets/img/moon.png" class="object-contain mt-[70px]" alt="">
             <div
                 class="k h-[250px] w-[413px] bg-[#181818] rounded-[55px] mt-[100px] shadow-[1px_1px_5px_2px_rgba(0,0,0,0.5)]">
                 <h1 class="main-header__title text-[40px] font-bold mt-[30px] mb-[10px] text-white flex justify-center">
@@ -37,3 +37,5 @@
 
     </header>
 </template>
+<script setup lang="ts">
+</script>

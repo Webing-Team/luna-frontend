@@ -3,7 +3,6 @@ import Sidebar from './components/Sidebar.vue';
 import MainHeader from "./components/MainHeader.vue";
 import {useRoute} from "vue-router";
 import {computed} from "vue";
-import {useNotifications} from "./store/useNotifications.js";
 
 const route = useRoute();
 
@@ -18,6 +17,7 @@ const isLogin = computed(() => {
      <Sidebar />
      <MainHeader />
    </div>
+
    <router-view />
  </div>
  <div v-else>
