@@ -71,7 +71,7 @@
 
                 <img
                   class="-my-8 mx-5 absolute"
-                  src="/public/img/notification (1).png"
+                  src="/src/assets/img/notification (1).png"
                   alt=""
                 />
               </div>

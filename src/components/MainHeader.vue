@@ -1,8 +1,11 @@
 <script setup>
 import NotificationList from "./NotificationList.vue";
 import {useNotifications} from "../store/useNotifications.js";
+import {useAuth} from "../store/useAuth.js";
 
-const notifications = useNotifications()
+const notificationsStore = useNotifications()
+const authStore = useAuth()
+
 
 </script>
 
@@ -18,7 +21,7 @@ const notifications = useNotifications()
       <div class="mx-auto relative text-gray-300">
         <img
           class="absolute left-3 top-2"
-          src="/public/img/searchIcon.png"
+          src="/src/assets/img/searchIcon.png"
           alt="Search"
         />
         <input
@@ -29,15 +32,15 @@ const notifications = useNotifications()
       </div>
 
       <div  class="flex justify-between items-center mr-[300px]">
-        <div class="relative"  @mouseleave="notifications.closeList()">
+        <div class="relative"  @mouseleave="notificationsStore.closeList()">
           <button
-              @mouseover="notifications.openList()"
+              @mouseover="notificationsStore.openList()"
 
               class="hover:bg-[#555555] w-[51px] h-[51px] rounded-3xl mr-[35px] "
           >
             <div>
               <svg
-                  :class="{ 'fill-white': notifications.isVisible }"
+                  :class="{ 'fill-white': notificationsStore.isVisible }"
                   style="pointer-events: all"
                   class="-mt-3 mx-3"
                   width="24"
@@ -64,7 +67,7 @@ const notifications = useNotifications()
 
               <img
                   class="mx-8 -my-10"
-                  src="/public/img/notification.png"
+                  src="/src/assets/img/notification.png"
                   alt=""
               />
             </div>
@@ -73,14 +76,25 @@ const notifications = useNotifications()
             <NotificationList />
           </div>
         </div>
-        <a class="flex justify-between items-center" href="#">
-          <img
-            class="w-[51px] h-[51px] rounded-3xl mr-3"
-            src="https://randomuser.me/api/portraits/men/59.jpg"
-            alt=""
-          />
-          <p class="text-white size-[18px] font-neMain">JacksonCap</p>
-        </a>
+        <div v-if="authStore.auth">
+          <a class="flex justify-between items-center" href="#">
+            <img
+                class="w-[51px] h-[51px] rounded-3xl mr-3"
+                src="https://randomuser.me/api/portraits/men/59.jpg"
+                alt=""
+            />
+            <p class="text-white size-[18px] font-neMain">{{ authStore.getUserNameIsAuth }}</p>
+          </a>
+        </div>
+        <div v-else class="flex gap-4">
+          <button class="btn text-white" @click="$router.push({name: 'signUp'})">
+            Sign Up
+          </button>
+          <button class="btn text-white" @click="$router.push({name: 'login'})">
+            Sign In
+          </button>
+        </div>
+
       </div>
     </div>
   </div>

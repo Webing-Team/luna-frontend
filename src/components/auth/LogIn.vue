@@ -1,9 +1,9 @@
 <template>
     <header class="main-header">
-        <a href="" ><img class=" mt-[44px] ml-[46px]" src="/luna-frontend/public/img/maki_arrow.png" alt=""></a>
+      <router-link to="/" ><img class=" mt-[44px] ml-[46px]" src="/src/assets/img/maki_arrow.png" alt=""></router-link>
         <!-- контейнер с картинкой и полем ввода данных  -->
         <div class="flex justify-center mt-24 gap-[350px]">
-            <img src="/luna-frontend/public/img/moon.png" class="mt-[70px]"alt="">
+            <img src="/src/assets/img/moon.png" class="mt-[70px]" alt="">
             <div class="k h-[453px] w-[413px] bg-[#181818] rounded-[55px] mt-[20px] shadow-[1px_1px_5px_2px_rgba(0,0,0,0.5)]">
                 <h1 class="main-header__title text-[40px] font-bold mt-[25px] mb-[10px] text-white flex justify-center">
                     Welcome back!
@@ -24,7 +24,7 @@
         <!-- ссылки на следующие страницы -->
         <div class="text-container flex justify-center text-center mt-1 ml-[730px]">
             <p class="main-header__text__forgot-password font-inter text-base text-[#FFFFFF] gap-5">
-                You don’t have an account? <a class="main-header__link text-[rgb(115,155,185)]" href="">Sign up!</a>
+                You don’t have an account? <a class="main-header__link text-[rgb(115,155,185)]" href="">Log In!</a>
             </p>
         </div>
 
@@ -33,3 +33,5 @@
             </p>
     </header>
 </template>
+<script setup lang="ts">
+</script>

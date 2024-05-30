@@ -20,7 +20,7 @@ const notifications  = useNotifications()
           >
             <img
                 class="py-3 px-3"
-                src="/public/img/settings.png"
+                src="/src/assets/img/settings.png"
                 alt=""
             />
           </a>
