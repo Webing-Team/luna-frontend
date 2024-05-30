@@ -1,33 +1,39 @@
 <template>
-    <header class="main-header  ">
-        <button class=" mt-46 ml-44"> <img src="../../public/img/maki_arrow.png" alt=""></button>
+    <header class="main-header">
+        <a href=""><img class=" mt-[44px] ml-[46px]" src="/luna-frontend/public/img/maki_arrow.png" alt=""></a>
         <!-- контейнер с картинкой и полем ввода данных  -->
-        <div class="main-header__container flex justify-center mt-200  gap-350">
-            <img src="../../public/img/moon.png" alt="">
+
+        <div class="flex justify-center mt-24 gap-[350px]">
+            <img src="/luna-frontend/public/img/moon.png" class="object-contain mt-[70px]" alt="">
             <div
-                class="main-header__window-comeback__forgot_password h-[256px] w-[413px] bg-[#181818] rounded-[55px] shadow-[1px 1px 5px 2px rgba(0,0,0,0.5)] ">
-                <h1
-                    class="main-header__title  text-[40px] font-bold mt-[5px] mb-[20px] text-white flex justify-center pt-[25px]">
+                class="k h-[250px] w-[413px] bg-[#181818] rounded-[55px] mt-[100px] shadow-[1px_1px_5px_2px_rgba(0,0,0,0.5)]">
+                <h1 class="main-header__title text-[40px] font-bold mt-[30px] mb-[10px] text-white flex justify-center">
                     Forgot Password
                 </h1>
 
                 <!-- поля для ввода информации  -->
-                <fieldset class="main-header__fieldset ">
-                    <div class="container ">
-                        <input class="main-header__input" type="password" placeholder="Password">
-                    </div>
+                <fieldset class="flex flex-col items-center ">
+                    <input
+                        class="bg-black w-[346px] h-[45px] mb-[16px] rounded-[10px] text-customGray placeholder-customGray outline-none pl-[10px]"
+                        type="text" placeholder="Username">
+                    </input>
+
+
                 </fieldset>
+
                 <button
-                    class="main-header__button button-blue2 flex justify-center text-white pt-[10px] w-[346px] h-[45px] rounded-[10px] bg-[#23415B] ml-[33px] mt-[5px]  "
-                    href="">Request New Password</button>
+                    class="flex justify-center  text-white pt-[10px] w-[346px] h-[45px] rounded-[10px] bg-[#23415B] ml-[33px] mt-[5px]">Request
+                    New Password</button>
             </div>
         </div>
-        <!-- сылки на следующие страници -->
-  
-            <div class="text-container  flex justify-center text-center ml-[740px] mt-[-150px] ">
-                <p class="main-header__text__forgot-password font-inter text-base text-[#8C8C8C] gap-5  "> Remember the
-                    password? <a class="main-header__link text-[rgb(115,155,185)]" href=""> Log In! </a></p>
-            </div>
+
+        <!-- ссылки на следующие страницы -->
+        <div class="text-container flex justify-center text-center ml-[730px] mt-[-110px]">
+            <p class="main-header__text__forgot-password font-inter text-base text-[#8C8C8C] gap-5">
+                Remembered the password? <a class="main-header__link text-[rgb(115,155,185)]" href="">Log In!</a>
+            </p>
+        </div>
+
 
     </header>
 </template>

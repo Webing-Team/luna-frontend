@@ -10,6 +10,10 @@ export default {
         main: ['Lexend'],
         neMain: ['Inter']
       },
+      colors: {
+        customGray: '#484848',
+        customblackgarey: '#2E2E2E'
+      },
     },
   },
   plugins: [],
