@@ -5,9 +5,14 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: () => import('../views/Home.vue')
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: () => import('../views/profile.vue')
     },
     {
       path: '/chat',
@@ -38,8 +43,8 @@ const router = createRouter({
       path: '/:catchAll(.*)',
       name: 'notFound',
       component: () => import('../views/NotFound.vue')
-    }
-
+    },
+   
   ]
 })
 
