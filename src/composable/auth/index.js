@@ -1,5 +1,5 @@
 export function setToken(token) {
-  localStorage.setItem('token', token.toString())
+  localStorage.setItem('token', JSON.stringify(token))
 }
 
 export function deleteToken() {
@@ -7,7 +7,7 @@ export function deleteToken() {
 }
 
 export function getToken() {
-  return localStorage.getItem('token')
+  return JSON.parse(localStorage.getItem('token'))
 }
 
 export function setUser(user) {

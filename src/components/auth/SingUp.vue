@@ -18,12 +18,14 @@ const form = reactive({
 const signUp = async () => {
 
   try {
-    const response = await makeRequest('/accounts/register', 'POST', form)
-
+    const response = await makeRequest('/v1/accounts/register', 'POST', form)
+    console.log(response)
     if (response.status === 'success') {
-      setToken(response.token) // сохраняем токен в локальное хранилище
-      setUser(response.user)
-      authStore.success()
+      setToken(response.tokens.access) // сохраняем токен в локальное хранилище
+      const response_refresh = await makeRequest('/token/refresh', 'POST', {refresh: response.tokens.refresh })
+      console.log(response_refresh)
+      // setUser(response.user)
+      // authStore.success()
       await router.push('/')
     }
 

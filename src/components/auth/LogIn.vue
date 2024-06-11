@@ -1,3 +1,22 @@
+<script setup lang="ts">
+import {onMounted} from "vue";
+import makeRequest from "../../api/makeRequest";
+
+const getUsers = async () => {
+  try {
+    const res = await makeRequest('/v1/accounts/user/17', 'GET', null, true)
+    console.log(res)
+  } catch (e) {
+    console.error(e)
+  }
+}
+
+onMounted(() => {
+  getUsers()
+})
+</script>
+
+
 <template>
     <header class="main-header">
       <router-link to="/" ><img class=" mt-[44px] ml-[46px]" src="/src/assets/img/maki_arrow.png" alt=""></router-link>
@@ -33,5 +52,3 @@
             </p>
     </header>
 </template>
-<script setup lang="ts">
-</script>
