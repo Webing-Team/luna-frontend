@@ -5,9 +5,14 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: () => import('../views/Home.vue')
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: () => import('../views/profile.vue')
     },
     {
       path: '/chat',
@@ -34,12 +39,6 @@ const router = createRouter({
       name: 'forgotPassword',
       component: () => import('../components/auth/ForgotPassword.vue')
     },
-    {
-      path: '/:catchAll(.*)',
-      name: 'notFound',
-      component: () => import('../views/NotFound.vue')
-    }
-
   ]
 })
 

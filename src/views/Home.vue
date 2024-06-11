@@ -1,6 +1,9 @@
+<script setup>
+
+</script>
+
 <template>
-    <main>
-        <h1>Home</h1>
-        <p>This is the home page</p>
-    </main>
+  <div>
+    <h1>Home</h1>
+  </div>
 </template>
