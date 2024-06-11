@@ -22,10 +22,10 @@
                             alt=""></button>
                     <button
                         class="w-[140px] h-[43px] bg-[#4B79A1] rounded-[45px] text-white font-inter font-bold text-base cursor-pointer leading-[19.36px]">Follow</button>
-                        
+
                 </div>
-                <div class="flex justify-center  mr-[25px]  text-[24px]  ">
-                    <p class="font-Inter text-[24px] text-left text-[#818181] w-[850px]">
+                <div class="flex justify-center  mr-[25px]  text-[24px] sm:flex justify-start md:flex justify-start lg:flex justify-start xl:flex justify-start ">
+                    <p class="font-Inter text-[24px] text-left text-[#818181] w-[850px]  sm: md: lg: xl:">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac nisl libero. Duis tincidunt ac
                         nisi quis gravida.
                         Donec non laoreet mauris. Mauris viverra blandit tellus a faucibus. Vivamus sagittis, augue nec
@@ -95,91 +95,43 @@
                 </div>
             </div>
 
-          
-                <div class="flex justify-center pt-[165px] ">
-                    <div
-                        class="w-[341px] h-[382px] rounded-[28px] bg-[#353535] pl-[35px] pt-[23px] custom-scrollbar overflow-y-auto ">
-                        <h2 class="font-inter text-[20px] font-bold leading-6 text-white">You might also like</h2>
-                        <div class="users flex items-center pt-[25px] overflow-y-auto">
-                            <div class="flex items-center space-x-2">
-                                <div class="w-[40px] h-[40px] bg-white rounded-full"></div>
-                                <div class="flex flex-col">
-                                    <p class="font-inter font-semibold leading-[19.36px] text-[16px] text-white">
-                                        Анатолий</p>
-                                    <span
-                                        class="font-inter font-semibold leading-[14.52px] text-[12px] text-[#707070]">@Anotoly1</span>
-                                </div>
+
+            <div class="flex justify-center pt-[165px]">
+                <div class="w-[341px] rounded-[28px] bg-[#353535] pl-[35px] pt-[23px] custom-scrollbar max-height ">
+                    <h2 class="font-inter text-[20px] font-bold leading-6 text-white">You might also like</h2>
+
+                    <div class="users flex items-center pt-[25px]">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-[40px] h-[40px] bg-white rounded-full"></div>
+                            <div class="flex flex-col">
+                                <p class="font-inter font-semibold leading-[19.36px] text-[16px] text-white">Анатолий
+                                </p>
+                                <span
+                                    class="font-inter font-semibold leading-[14.52px] text-[12px] text-[#707070]">@Anotoly1</span>
                             </div>
-                            <button
-                                class="w-[90px] h-[28px] bg-[#4B79A1] rounded-[45px] text-white font-inter font-bold cursor-pointer leading-[19.36px] text-[12px] ml-[60px]">Follow</button>
                         </div>
-                        <div class="users flex items-center pt-[25px] overflow-y-auto">
-                            <div class="flex items-center space-x-2">
-                                <div class="w-[40px] h-[40px] bg-white rounded-full"></div>
-                                <div class="flex flex-col">
-                                    <p class="font-inter font-semibold leading-[19.36px] text-[16px] text-white">
-                                        Анатолий</p>
-                                    <span
-                                        class="font-inter font-semibold leading-[14.52px] text-[12px] text-[#707070]">@Anotoly1</span>
-                                </div>
-                            </div>
-                            <button
-                                class="w-[90px] h-[28px] bg-[#4B79A1] rounded-[45px] text-white font-inter font-bold cursor-pointer leading-[19.36px] text-[12px] ml-[60px]">Follow</button>
-                        </div>
-                        <div class="users flex items-center pt-[25px] overflow-y-auto">
-                            <div class="flex items-center space-x-2">
-                                <div class="w-[40px] h-[40px] bg-white rounded-full"></div>
-                                <div class="flex flex-col">
-                                    <p class="font-inter font-semibold leading-[19.36px] text-[16px] text-white">
-                                        Анатолий</p>
-                                    <span
-                                        class="font-inter font-semibold leading-[14.52px] text-[12px] text-[#707070]">@Anotoly1</span>
-                                </div>
-                            </div>
-                            <button
-                                class="w-[90px] h-[28px] bg-[#4B79A1] rounded-[45px] text-white font-inter font-bold cursor-pointer leading-[19.36px] text-[12px] ml-[60px]">Follow</button>
-                        </div>
-                        <div class="users flex items-center pt-[25px] overflow-y-auto">
-                            <div class="flex items-center space-x-2">
-                                <div class="w-[40px] h-[40px] bg-white rounded-full"></div>
-                                <div class="flex flex-col">
-                                    <p class="font-inter font-semibold leading-[19.36px] text-[16px] text-white">
-                                        Анатолий</p>
-                                    <span
-                                        class="font-inter font-semibold leading-[14.52px] text-[12px] text-[#707070]">@Anotoly1</span>
-                                </div>
-                            </div>
-                            <button
-                                class="w-[90px] h-[28px] bg-[#4B79A1] rounded-[45px] text-white font-inter font-bold cursor-pointer leading-[19.36px] text-[12px] ml-[60px]">Follow</button>
-                        </div>
-                        <div class="users flex items-center pt-[25px] overflow-y-auto">
-                            <div class="flex items-center space-x-2">
-                                <div class="w-[40px] h-[40px] bg-white rounded-full"></div>
-                                <div class="flex flex-col">
-                                    <p class="font-inter font-semibold leading-[19.36px] text-[16px] text-white">
-                                        Анатолий</p>
-                                    <span
-                                        class="font-inter font-semibold leading-[14.52px] text-[12px] text-[#707070]">@Anotoly1</span>
-                                </div>
-                            </div>
-                            <button
-                                class="w-[90px] h-[28px] bg-[#4B79A1] rounded-[45px] text-white font-inter font-bold cursor-pointer leading-[19.36px] text-[12px] ml-[60px]">Follow</button>
-                        </div>
-                        <div class="users flex items-center pt-[25px] overflow-y-auto">
-                            <div class="flex items-center space-x-2">
-                                <div class="w-[40px] h-[40px] bg-white rounded-full"></div>
-                                <div class="flex flex-col">
-                                    <p class="font-inter font-semibold leading-[19.36px] text-[16px] text-white">
-                                        Анатолий</p>
-                                    <span
-                                        class="font-inter font-semibold leading-[14.52px] text-[12px] text-[#707070]">@Anotoly1</span>
-                                </div>
-                            </div>
-                            <button
-                                class="w-[90px] h-[28px] bg-[#4B79A1] rounded-[45px] text-white font-inter font-bold cursor-pointer leading-[19.36px] text-[12px] ml-[60px]">Follow</button>
-                        </div>
+                        <button
+                            class="w-[90px] h-[28px] bg-[#4B79A1] rounded-[45px] text-white font-inter font-bold cursor-pointer leading-[19.36px] text-[12px] ml-[60px]">Follow</button>
                     </div>
+
+                    <div class="users flex items-center pt-[25px]">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-[40px] h-[40px] bg-white rounded-full"></div>
+                            <div class="flex flex-col">
+                                <p class="font-inter font-semibold leading-[19.36px] text-[16px] text-white">Анатолий
+                                </p>
+                                <span
+                                    class="font-inter font-semibold leading-[14.52px] text-[12px] text-[#707070]">@Anotoly1</span>
+                            </div>
+                        </div>
+                        <button
+                            class="w-[90px] h-[28px] bg-[#4B79A1] rounded-[45px] text-white font-inter font-bold cursor-pointer leading-[19.36px] text-[12px] ml-[60px]">Follow</button>
+                    </div>
+
+                    <!-- Repeat the .users block as necessary -->
+
                 </div>
+            </div>
         </main>
     </div>
 </template>
@@ -218,6 +170,11 @@ export default {
     background-color: #5891C3;
 }
 
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff #707070;
+}
+
 .custom-scrollbar::-webkit-scrollbar {
     width: 5px;
 }
@@ -225,6 +182,7 @@ export default {
 .custom-scrollbar::-webkit-scrollbar-thumb {
     background-color: #ffffff;
     border-radius: 10px;
+    height: 40px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
@@ -232,8 +190,9 @@ export default {
     border-radius: 10px;
 }
 
-.custom-scrollbar::-webkit-scrollbar-thumb {
-    height: 40px;
+.max-height {
+    max-height: 382px;
+    overflow-y: auto;
 }
 
 .main {
