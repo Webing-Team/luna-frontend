@@ -4,7 +4,6 @@ import MainHeader from "./components/MainHeader.vue";
 import {useRoute} from "vue-router";
 import {computed, onMounted} from "vue";
 
-
 const route = useRoute();
 
 const isLogin = computed(() => {
