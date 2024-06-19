@@ -1,8 +1,7 @@
 <template>
-    <div class="bg-[#1F1F1F] gap-0">
-        <main class="main">
-
-            <div class="grid ">
+  
+        <main class="main bg-[#1F1F1F] " >
+            <div class="grid">
                 <div class="h-[360px] w-[1430px] bg-white"></div>
                 <div class="container flex gap-[40px] ml-[170px] mt-[-60px] ">
                     <div id="circle"
@@ -24,7 +23,7 @@
                         class="w-[140px] h-[43px] bg-[#4B79A1] rounded-[45px] text-white font-inter font-bold text-base cursor-pointer leading-[19.36px]">Follow</button>
 
                 </div>
-                <div class="flex justify-center  mr-[25px]  text-[24px] sm:flex justify-start md:flex justify-start lg:flex justify-start xl:flex justify-start ">
+                <div class="flex justify-center  mr-[25px]  text-[24px] sm: md:  lg:  xl: ">
                     <p class="font-Inter text-[24px] text-left text-[#818181] w-[850px]  sm: md: lg: xl:">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac nisl libero. Duis tincidunt ac
                         nisi quis gravida.
@@ -133,7 +132,6 @@
                 </div>
             </div>
         </main>
-    </div>
 </template>
 
 <script>
@@ -173,6 +171,7 @@ export default {
 .custom-scrollbar {
     scrollbar-width: thin;
     scrollbar-color: #ffffff #707070;
+   
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -198,5 +197,6 @@ export default {
 .main {
     display: grid;
     grid-template-columns: 75% 25%;
+ 
 }
 </style>
