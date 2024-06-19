@@ -4,6 +4,7 @@ import {setToken, setUser} from "../../composable/auth/index.js";
 import {useRouter} from "vue-router";
 import {useAuth} from "../../store/useAuth.js";
 import makeRequest from "../../api/makeRequest.js";
+import showToast from "../toast/index.js";
 
 const router = useRouter()
 const authStore = useAuth()
@@ -17,21 +18,22 @@ const form = reactive({
 
 const signUp = async () => {
 
-  try {
-    const response = await makeRequest('/accounts/register', 'POST', form)
+  const response = await makeRequest('/v1/accounts/register', 'POST', form)
 
-    if (response.status === 'success') {
-      setToken(response.token) // сохраняем токен в локальное хранилище
-      setUser(response.user)
-      authStore.success()
-      await router.push('/')
-    }
-
-  } catch (e) {
-    console.error(e)
-  } finally {
-
+  if (response.status === 'success') {
+    const response_refresh = await makeRequest('/token/refresh', 'POST', {refresh: response.tokens.refresh })
+    setToken(response_refresh.access)
+    // setUser(response.user)
+    authStore.success()
+    await router.push('/')
+    location.reload()
   }
+
+  if (response.status === 'error') {
+    console.log(response)
+    showToast(response.detail[0], 'red')
+  }
+
 }
 </script>
 

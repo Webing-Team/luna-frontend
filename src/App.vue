@@ -2,13 +2,14 @@
 import Sidebar from './components/Sidebar.vue';
 import MainHeader from "./components/MainHeader.vue";
 import {useRoute} from "vue-router";
-import {computed} from "vue";
+import {computed, onMounted} from "vue";
 
 const route = useRoute();
 
 const isLogin = computed(() => {
-  return route.path === '/login' || route.path === '/signUp' || route.path === '/forgotPassword';
+  return route.path === '/login' || route.path === '/signUp' || route.path === '/signup' || route.path === '/forgotPassword';
 })
+
 </script>
 
 <template>
