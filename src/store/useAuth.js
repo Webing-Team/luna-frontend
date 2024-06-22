@@ -8,7 +8,7 @@ export const useAuth = defineStore('useAuth', {
   },
   getters: {
     getUserNameIsAuth() {
-      return JSON.parse(localStorage.getItem('user')).username || "JacksonCap"
+      return JSON.parse(localStorage.getItem('user'))?.username || "JacksonCap"
     },
     auth() {
       return !!localStorage.getItem('token')
